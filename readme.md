@@ -1,23 +1,14 @@
-<h1>Titulo ou Arte do Projeto</h1> 
+<h1 align="center">Git para Iniciantes</h1> 
 
-<p align="center">
-  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
-  <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
-  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-  <img src="http://img.shields.io/static/v1?label=Ruby&message=2.6.3&color=red&style=for-the-badge&logo=ruby"/>
-  <img src="http://img.shields.io/static/v1?label=Ruby%20On%20Rails%20&message=6.0.2.2&color=red&style=for-the-badge&logo=ruby"/>
-  <img src="http://img.shields.io/static/v1?label=TESTES&message=%3E100&color=GREEN&style=for-the-badge"/>
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+
+<p align="justify">
+O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial desde iniciantes a seniores na programação. Aqui você encontrará os primeiros passos e comandos para quem está começando agora, de forma clara e sem termos chatos que ninguém entende :)
 </p>
 
-> Status do Projeto: :heavy_check_mark: :warning: (concluido, em desenvolvimento, etc)
 
-### Tópicos 
+## Sumário
 
-:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
-
-:small_blue_diamond: [Funcionalidades](#funcionalidades)
+:small_blue_diamond: [Primeiros passos](#primeiros-passos)
 
 :small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
@@ -29,49 +20,110 @@
 
 Insira os tópicos do README em links para facilitar a navegação do leitor
 
-## Descrição do projeto 
 
-<p align="justify">
-  Descrição breve do projeto compondo um paragrafo ou dois. 
-</p>
 
-## Funcionalidades
+## Primeiros passos :fishing_pole_and_fish:
 
-:heavy_check_mark: Funcionalidade 1  
+Comece instalando o Git no seu computador. Para isso acesse https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git e escolha de acordo com o seu sistema operacional (Windows, Linux, MacOS etc).
 
-:heavy_check_mark: Funcionalidade 2  
+Os comandos são realizados dentro de um terminal e você pode utilizar, por exemplo, o terminal do VScode.
 
-:heavy_check_mark: Funcionalidade 3  
-
-:heavy_check_mark: Funcionalidade 4  
-
-## Layout ou Deploy da Aplicação :dash:
-
-> Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
-
-... 
-
-Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
-
-## Pré-requisitos
-
-:warning: [Node](https://nodejs.org/en/download/)
-
-...
-
-Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação 
-
-## Como rodar a aplicação :arrow_forward:
-
-No terminal, clone o projeto: 
+:arrow_right: Digite o comando "mkdir" no terminal para criar uma pasta. Esta será o seu repositório, um lugar onde estarão os códigos que farão parte do seu projeto. Por exemplo:
 
 ```
-git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
+$ mkdir pasta_do_projeto
+```
+:arrow_right: Com o comando "cd", entre na pasta e inicie o repositorio com o comando "git init":
+
+```
+$ cd pasta_do_projeto
+$ git init
+```
+Após isso, será possível criar os arquivos e desenvolver seu projeto.
+
+
+
+## Comandos básicos :balloon:
+
+:small_orange_diamond:O comando "diff" serve para mostrar as últimas modificações que um arquivo sofreu:
+
+```
+$ git diff
+```
+:small_orange_diamond:"git status" mostra o estado atual do projeto, se há alguma alteração esperando ser aceita etc:
+
+```
+$ git status
+```
+:small_orange_diamond:"git show" mostra as mudanças que cada commit fez:
+
+```
+$ git show
+```
+:small_orange_diamond:"git log" mostra os commits feitos e informações sobre eles, enquanto o "git log --graph" mostra as informações em formato de grafo:
+
+```
+$ git log
+$ git log --graph
 ```
 
-... 
 
-Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
+
+## Modificando arquivos (commits) :memo:
+
+Durante o desenvolvimento do seu projeto, ele sofrerá inúmeras modificações e digamos que cada modificação gere um registro para que você e outras pessoas que estejam contribuindo possam acompanhar a evolução. Cada modificação dentro do código é chamada de "commit". 
+
+:arrow_right: Por exemplo, crie um arquivo README.md dentro da pasta do seu projeto e adicione algum texto dentro dele. Após isso, salve-o.
+Ao adicionar um texto dentro do arquivo, você o modificou e para registrar essa modificação, digite o seguinte comando dentro da pasta do seu projeto, adicionando um comentário sobre a mudança que realizou:
+```
+$ git commit -am "comentário sobre a modificação"
+```
+:arrow_right: Utilize "git show" para visualizar as modificações:
+```
+$ git show
+```
+:arrow_right: "git log" para listar todas as commits (modificações realizadas) no projeto:
+```
+$ git log
+$ git log --graph
+```
+
+## Retornando modificações (reset) :leftwards_arrow_with_hook:
+
+Caso você altere algum arquivo e deseje voltar a uma versão anterior a atual, utilize o comando "git reset". Existem algumas variações desse comando, sendo as mais comuns:
+
+:small_orange_diamond:"git reset soft", onde ele volta a modificação mas ainda existe um commit e vc pode voltar a modificar o arquivo principal:
+```
+$ git reset --soft hash_do_commit 
+```
+:small_orange_diamond:"git reset hard" apaga completamente o commit e a mesma modificação não poderá ser refeita. Mata todos os anteriores ao commit indicado, não contando ele:
+```
+$ git reset --hard hash_do_commit 
+```
+
+:bangbang: a "hash" se trata de um número de modificação e cada commit possui o seu. É possível visualizá-la através do comando "git log".
+
+
+
+
+
+
+
+
+
+## Conectar seu repositório ao Github :computer: :arrow_right: :octocat:
+
+Para conectar o repositório que você criou em seu computador com a sua conta do Github utilizaremos o protocolo SSH, muito comum para acesso remoto.
+Para isso, siga os seguintes passos:
+
+:arrow_right: Crie um repositório dentro do seu Github:
+
+![new repos](https://user-images.githubusercontent.com/126173770/225103286-5a10ba6b-9a4b-4e66-b5bf-e7ef586db5c9.png)</center>
+
+
+
+
+
 
 ## Como rodar os testes
 
