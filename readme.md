@@ -96,10 +96,11 @@ $ git log --graph
 
 ## Modificando arquivos (commits) :memo:
 
-<p align="justify"> Durante o desenvolvimento do seu projeto, ele sofrerá inúmeras modificações e digamos que cada modificação gere um registro para que você e outras pessoas que estejam contribuindo possam acompanhar a evolução. Cada modificação dentro do código é chamada de "commit". 
+<p align="justify"> Durante o desenvolvimento do seu projeto, ele sofrerá inúmeras modificações e digamos que cada modificação gere um registro para que você e outras pessoas que estejam contribuindo possam acompanhar a evolução. Cada modificação dentro do código é chamada de "commit". </p>
 
-:arrow_right: Por exemplo, crie um arquivo README.md dentro da pasta do seu projeto e adicione algum texto dentro dele. Após isso, salve-o.
+<p align="justify"> :arrow_right: Por exemplo, crie um arquivo README.md dentro da pasta do seu projeto e adicione algum texto dentro dele. Após isso, salve-o.
 Ao adicionar um texto dentro do arquivo, você o modificou e para registrar essa modificação, digite o seguinte comando dentro da pasta do seu projeto, adicionando um comentário sobre a mudança que realizou: </p>
+
 ```
 $ git commit -am "comentário sobre a modificação"
 ```
