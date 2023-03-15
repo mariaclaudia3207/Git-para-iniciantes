@@ -23,17 +23,22 @@ O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial des
 
 :small_blue_diamond: [Conectar seu repositório ao Github](#conectar-seu-repositório-ao-github-octocat)
 
+:small_blue_diamond: [Como criar uma cópia (branch)](#como-criar-uma-cópia-branch)
+
+:small_blue_diamond: [Como juntar a branch cópia com o arquivo principal (merge e rebase)](#como-juntar-a-branch-cópia-com-o-arquivo-principal-merge-e-rebase)
+
 :small_blue_diamond: [Subir arquivos e modificações para o Github (push)](#subir-arquivos-e-modificações-para-o-github-push-arrow_up)
 
 :small_blue_diamond: [Como juntar a branch cópia com o arquivo principal (merge e rebase)](#como-juntar-a-branch-cópia-com-o-arquivo-principal-merge-e-rebase)
 
+:small_blue_diamond: [Como clonar repositórios remotos do Github (git clone)](#como-clonar-repositórios-remotos-do-github-git-clone)
 
 
 
 
 ## Primeiros passos :fishing_pole_and_fish: 
 
-Comece instalando o Git no seu computador. Para isso acesse https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git e escolha de acordo com o seu sistema operacional (Windows, Linux, MacOS etc).
+Comece instalando o Git no seu computador. Para isso acesse https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git e escolha de acordo com o seu sistema operacional (Windows, Linux, MacOS etc). Dependendo da IDE em que você for utilizar, isso pode ser feito através de seu marketplace.
 
 Os comandos são realizados dentro de um terminal e você pode utilizar, por exemplo, o terminal do VScode, na opção "git bash":
 
@@ -195,6 +200,22 @@ $ git push origin master_ou_main(nome do principal)
 
 
 
+
+## Adicionando tags de versionamento ao push
+
+A cada versão do seu projeto que será enviada para o github através do push, pode ser adicionada a nota de versão (ex: 1.0.0). Para isso, utilize os seguintes comandos:
+
+```
+git tag -a 1.0.0 -m "comentários etc"
+git push origin main --tags 
+```
+
+
+
+
+
+
+
 ## Como criar uma cópia (branch)
 
 As branchs se tratam de cópias que você faz para alteração. Alterar o arquivo principal é meio arriscado rsrs e por isso fazemos isso na programação. Para criar uma branch, utilize o seguinte comando:
@@ -245,9 +266,15 @@ $ git rebase  nome_do_branch
 
 
 
+## Como clonar repositórios remotos do Github (git clone)
 
+Para baixar um repositório em que você está trabalhando ou encontrou no github para o seu computador, existe o comando "git clone":
+```
+g clone chave_do_repositorio nome_que_vai_ficar_salvo
+```
+A chave do repositório pode ser encontrada na aba:
 
-
+![image](https://user-images.githubusercontent.com/126173770/225379646-73a491fb-15d9-4a51-a10b-5ef1faa0d629.png)
 
 
 
