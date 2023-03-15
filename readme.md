@@ -1,5 +1,4 @@
-<h1 align="center">Git para Iniciantes</h1> 
-
+<h1 align="center">Git para Iniciantes</h1>
 
 
 <p align="justify">
