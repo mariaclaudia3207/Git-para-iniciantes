@@ -35,7 +35,7 @@ O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial des
 
 ## Primeiros passos :fishing_pole_and_fish: 
 
-<p align="justify"> Comece instalando o Git no seu computador. Para isso acesse https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git e escolha de acordo com o seu sistema operacional (Windows, Linux, MacOS etc). Dependendo da IDE em que você for utilizar, isso pode ser feito através de seu marketplace. </p>
+<p align="justify"> Comece instalando o Git no seu computador. Para isso acesse https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git e escolha de acordo com o seu sistema operacional (Windows, Linux, MacOS etc). Dependendo da IDE em que você for utilizar, isso pode ser feito através de extensões. </p>
 
 Os comandos são realizados dentro de um terminal e você pode utilizar, por exemplo, o terminal do VScode, na opção "git bash":
 
