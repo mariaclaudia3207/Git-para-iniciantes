@@ -33,7 +33,7 @@ O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial des
 
 :small_blue_diamond: [Como clonar repositórios remotos do Github (git clone)](#como-clonar-repositórios-remotos-do-github-git-clone)
 
-
+:small_blue_diamond: [Adicionando tags de versionamento ao push](#adicionando-tags-de-versionamento-ao-push)
 
 
 ## Primeiros passos :fishing_pole_and_fish: 
@@ -189,26 +189,22 @@ Para dúvidas relacionadas ao SSH e à conexão com o Github, acesse https://doc
 
 
 
-## Subir arquivos e modificações para o Github (push) :arrow_up:
 
-Após você conseguir conectar o repositório do seu computador ao repositório do Github, você poderá passar os arquivos para lá. Para isso, será usado o comando "push", saindo da origem (origin) para o main ou master do github:
 
+
+## Como clonar repositórios remotos do Github (git clone)
+
+Para baixar um repositório em que você está trabalhando ou encontrou no github para o seu computador, existe o comando "git clone":
 ```
-$ git push origin master_ou_main(nome do principal)
+g clone chave_do_repositorio nome_que_vai_ficar_salvo
 ```
+A chave do repositório pode ser encontrada na aba:
+
+![image](https://user-images.githubusercontent.com/126173770/225379646-73a491fb-15d9-4a51-a10b-5ef1faa0d629.png)
 
 
 
 
-
-## Adicionando tags de versionamento ao push
-
-A cada versão do seu projeto que será enviada para o github através do push, pode ser adicionada a nota de versão (ex: 1.0.0). Para isso, utilize os seguintes comandos:
-
-```
-git tag -a 1.0.0 -m "comentários etc"
-git push origin main --tags 
-```
 
 
 
@@ -243,6 +239,7 @@ $git branch -D nome_do_branch
 
 
 
+
 ## Como juntar a branch cópia com o arquivo principal (merge e rebase)
 
 Para você passar as informações da branch de cópia para a branch main ou master, que é o arquivo principal que você está trabalhando no momento, existem dois comandos:
@@ -266,15 +263,41 @@ $ git rebase  nome_do_branch
 
 
 
-## Como clonar repositórios remotos do Github (git clone)
 
-Para baixar um repositório em que você está trabalhando ou encontrou no github para o seu computador, existe o comando "git clone":
-```
-g clone chave_do_repositorio nome_que_vai_ficar_salvo
-```
-A chave do repositório pode ser encontrada na aba:
 
-![image](https://user-images.githubusercontent.com/126173770/225379646-73a491fb-15d9-4a51-a10b-5ef1faa0d629.png)
+
+## Subir arquivos e modificações para o Github (push) :arrow_up:
+
+Após você conseguir conectar o repositório do seu computador ao repositório do Github, você poderá passar os arquivos para lá. Para isso, será usado o comando "push", saindo da origem (origin) para o main ou master do github:
+
+```
+$ git push origin master_ou_main(nome do principal)
+```
+
+
+
+
+
+
+## Adicionando tags de versionamento ao push
+
+A cada versão do seu projeto que será enviada para o github através do push, pode ser adicionada a nota de versão (ex: 1.0.0). Para isso, utilize os seguintes comandos:
+
+```
+git tag -a 1.0.0 -m "comentários etc"
+git push origin main --tags 
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
