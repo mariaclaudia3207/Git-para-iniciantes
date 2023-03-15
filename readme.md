@@ -17,7 +17,7 @@ O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial des
 
 :small_blue_diamond: [Comandos básicos](#Comandos-básicos-balloon)
 
-:small_blue_diamond: [Modificando arquivos](#Modificando-arquivos-memo)
+:small_blue_diamond: [Modificando arquivos (commits)](#Modificando-arquivos-(commits)-memo)
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
