@@ -13,11 +13,11 @@ O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial des
 
 ## Sumário
 
-:small_blue_diamond: [Primeiros passos](#primeiros-passos)
+:small_blue_diamond: [Primeiros passos](#primeiros-passos-fishing_pole_and_fish)
 
-:small_blue_diamond: [Comandos básicos](#Comandos-básicos-dash)
+:small_blue_diamond: [Comandos básicos](#Comandos-básicos-balloon)
 
-:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
+:small_blue_diamond: [Modificando arquivos](#Modificando-arquivos-memo)
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
@@ -30,7 +30,7 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 
 
 
-## Primeiros passos  
+## Primeiros passos :fishing_pole_and_fish: 
 
 Comece instalando o Git no seu computador. Para isso acesse https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git e escolha de acordo com o seu sistema operacional (Windows, Linux, MacOS etc).
 
