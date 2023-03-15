@@ -21,11 +21,11 @@ O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial des
 
 :small_blue_diamond: [Retornando modificações (reset)](#retornando-modificações-reset-leftwards_arrow_with_hook)
 
-:small_blue_diamond: [Conectar seu repositório ao Github](#conectar-seu-repositório-ao-Github-octocat)
+:small_blue_diamond: [Conectar seu repositório ao Github](#conectar-seu-repositório-ao-github-octocat)
 
-:small_blue_diamond: [Comandos básicos](#comandos-básicos-balloon)
+:small_blue_diamond: [Subir arquivos e modificações para o Github (push)](#subir-arquivos-e-modificações-para-o-github-push-arrow_up)
 
-:small_blue_diamond: [Comandos básicos](#comandos-básicos-balloon)
+:small_blue_diamond: [Como juntar a branch cópia com o arquivo principal (merge e rebase)](#como-juntar-a-branch-cópia-com-o-arquivo-principal-merge-e-rebase)
 
 
 
@@ -184,69 +184,72 @@ Para dúvidas relacionadas ao SSH e à conexão com o Github, acesse https://doc
 
 
 
+## Subir arquivos e modificações para o Github (push) :arrow_up:
 
-## Como rodar os testes
-
-Coloque um passo a passo para executar os testes
+Após você conseguir conectar o repositório do seu computador ao repositório do Github, você poderá passar os arquivos para lá. Para isso, será usado o comando "push", saindo da origem (origin) para o main ou master do github:
 
 ```
-$ npm test, rspec, etc 
+$ git push origin master_ou_main(nome do principal)
 ```
 
-## Casos de Uso
 
-Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
 
-Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
 
-## JSON :floppy_disk:
+## Como criar uma cópia (branch)
 
-### Usuários: 
+As branchs se tratam de cópias que você faz para alteração. Alterar o arquivo principal é meio arriscado rsrs e por isso fazemos isso na programação. Para criar uma branch, utilize o seguinte comando:
 
-|name|email|password|token|avatar|
-| -------- |-------- |-------- |-------- |-------- |
-|Lais Lima|laislima98@hotmail.com|lais123|true|https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9-U_HbQAipum9lWln3APcBIwng7T46hdBA42EJv8Hf6Z4fDT3&usqp=CAU|
+```
+$ git checkout -b nome_da_branch
+```
 
-... 
+É bem simples mesmo. Depois que alteramos essas cópias podemos passá-las para o arquivo principal, os chamados "commits" :)
 
-Se quiser, coloque uma amostra do banco de dados 
 
-## Iniciando/Configurando banco de dados
+:large_orange_diamond: Outros comandos relacionados a branchs:
+:small_orange_diamond: Lista todas as branchs existentes no repositório e mostra em qual você está no momento:
+```
+$ git branch
+```
+:small_orange_diamond: Para excluir uma branch:
 
-Se for necessário configurar algo antes de iniciar o banco de dados insira os comandos a serem executados 
+```
+$git branch -D nome_do_branch
+```
 
-## Linguagens, dependencias e libs utilizadas :books:
 
-- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
-- [React PDF](https://react-pdf.org/)
 
-...
 
-Liste as tecnologias utilizadas no projeto que **não** forem reconhecidas pelo Github 
 
-## Resolvendo Problemas :exclamation:
 
-Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos. 
+## Como juntar a branch cópia com o arquivo principal (merge e rebase)
 
-## Tarefas em aberto
+Para você passar as informações da branch de cópia para a branch main ou master, que é o arquivo principal que você está trabalhando no momento, existem dois comandos:
 
-Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
 
-:memo: Tarefa 1 
+:arrow_right: Merge
 
-:memo: Tarefa 2 
+Através do "merge" você pode unir as duas branchs, mesclando assim as modificações e diferenças entre cada uma:
+```
+$ git merge nome_do_branch
+```
 
-:memo: Tarefa 3 
+:arrow_right: Rebase
 
-## Desenvolvedores/Contribuintes :octocat:
+Com o "rebase" é possível unir duas branchs e as modificações no arquivo (commits) são mostrados de forma linear, poluindo menos as informações de commits do seu repositório. Ele é geralmente mais utilizado e pode ser usado através do comando:
+``` 
+$ git rebase  nome_do_branch
+```
 
-Liste o time responsável pelo desenvolvimento do projeto
 
-| [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |
-| :---: | :---: | :---: 
 
-## Licença 
 
-The [MIT License]() (MIT)
 
-Copyright :copyright: Ano - Titulo do Projeto
+
+
+
+
+
+
+
+
