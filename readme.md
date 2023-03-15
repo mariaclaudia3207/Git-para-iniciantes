@@ -1,16 +1,21 @@
 <h1 align="center">Git para Iniciantes</h1> 
 
 
+
 <p align="justify">
 O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial desde iniciantes a seniores na programação. Aqui você encontrará os primeiros passos e comandos para quem está começando agora, de forma clara e sem termos chatos que ninguém entende :)
 </p>
+
+
+
+
 
 
 ## Sumário
 
 :small_blue_diamond: [Primeiros passos](#primeiros-passos)
 
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
+:small_blue_diamond: [Comandos básicos](#Comandos-básicos-dash)
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
@@ -22,7 +27,10 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 
 
 
-## Primeiros passos :fishing_pole_and_fish:
+
+
+
+## Primeiros passos  
 
 Comece instalando o Git no seu computador. Para isso acesse https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git e escolha de acordo com o seu sistema operacional (Windows, Linux, MacOS etc).
 
@@ -43,6 +51,10 @@ $ cd pasta_do_projeto
 $ git init
 ```
 Após isso, será possível criar os arquivos e desenvolver seu projeto.
+
+
+
+
 
 
 
@@ -72,6 +84,10 @@ $ git log --graph
 
 
 
+
+
+
+
 ## Modificando arquivos (commits) :memo:
 
 Durante o desenvolvimento do seu projeto, ele sofrerá inúmeras modificações e digamos que cada modificação gere um registro para que você e outras pessoas que estejam contribuindo possam acompanhar a evolução. Cada modificação dentro do código é chamada de "commit". 
@@ -90,6 +106,10 @@ $ git show
 $ git log
 $ git log --graph
 ```
+
+
+
+
 
 ## Retornando modificações (reset) :leftwards_arrow_with_hook:
 
@@ -122,6 +142,42 @@ Para isso, siga os seguintes passos:
 :arrow_right: Crie um repositório dentro do seu Github:
 
 ![new repos](https://user-images.githubusercontent.com/126173770/225103286-5a10ba6b-9a4b-4e66-b5bf-e7ef586db5c9.png)</center>
+
+:arrow_right: Liste as chaves SSH existentes em seu computador pelo comando:
+```
+ls -al ~/.ssh
+```
+![image](https://user-images.githubusercontent.com/126173770/225324618-b8fcad71-9978-4812-bd58-3ecae3258787.png)
+
+:arrow_right: A chave com a extensão .pub será a utilizada. Para mostrar seu conteúdo, digite:
+```
+$ cat ~/.ssh/id_ed25519.pub
+```
+
+:bangbang: Se não houver chaves SSH, crie através do terminal uma com o email utilizado no seu Github, através do seu seguinte comando:
+```
+$ ssh-keygen -t ed25519 -C "email_utilizado_no_github.com"
+```
+Ele pedirá uma senha e sua confirmação.
+Se não funcionar, tente este:
+```
+$ ssh-keygen -t rsa -b 4096 -C "email_utilizado_no_github.com"
+```
+
+Para dúvidas relacionadas ao SSH e à conexão com o Github, acesse https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+:arrow_right: Após copiar o conteúdo da sua chave SSH, adicione no seu github na aba "SSH and GPG keys" que fica nas configurações:
+
+ Passo 1:
+ 
+ ![image](https://user-images.githubusercontent.com/126173770/225325852-5f440292-d1f3-486f-8418-224c1acfa017.png)
+ 
+ Passo 2:
+ 
+ ![image](https://user-images.githubusercontent.com/126173770/225326228-91ebd9f7-bcb5-423f-a814-5ef0d482ff92.png)
+
+:arrow_right: Prontinho, seu computador e Github estão conectados e prontos para atualizações! :rocket:
+
 
 
 
