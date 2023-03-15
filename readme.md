@@ -26,7 +26,10 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 
 Comece instalando o Git no seu computador. Para isso acesse https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git e escolha de acordo com o seu sistema operacional (Windows, Linux, MacOS etc).
 
-Os comandos são realizados dentro de um terminal e você pode utilizar, por exemplo, o terminal do VScode.
+Os comandos são realizados dentro de um terminal e você pode utilizar, por exemplo, o terminal do VScode, na opção "git bash":
+
+![image](https://user-images.githubusercontent.com/126173770/225314153-a4dc06d5-4e43-462e-9417-502f53cccd91.png)
+
 
 :arrow_right: Digite o comando "mkdir" no terminal para criar uma pasta. Esta será o seu repositório, um lugar onde estarão os códigos que farão parte do seu projeto. Por exemplo:
 
