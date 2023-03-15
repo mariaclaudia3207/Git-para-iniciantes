@@ -15,16 +15,17 @@ O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial des
 
 :small_blue_diamond: [Primeiros passos](#primeiros-passos-fishing_pole_and_fish)
 
-:small_blue_diamond: [Comandos básicos](#Comandos-básicos-balloon)
+:small_blue_diamond: [Comandos básicos](#comandos-básicos-balloon)
 
-:small_blue_diamond: [Modificando arquivos (commits)](#Modificando-arquivos-(commits)-memo)
+:small_blue_diamond: [Modificando arquivos (commits)](#modificando-arquivos-commits-memo)
 
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+:small_blue_diamond: [Retornando modificações (reset)](#retornando-modificações-reset-leftwards_arrow_with_hook)
 
-... 
+:small_blue_diamond: [Conectar seu repositório ao Github](#conectar-seu-repositório-ao-Github-octocat)
 
-Insira os tópicos do README em links para facilitar a navegação do leitor
+:small_blue_diamond: [Comandos básicos](#comandos-básicos-balloon)
 
+:small_blue_diamond: [Comandos básicos](#comandos-básicos-balloon)
 
 
 
@@ -134,7 +135,7 @@ $ git reset --hard hash_do_commit
 
 
 
-## Conectar seu repositório ao Github :computer: :arrow_right: :octocat:
+## Conectar seu repositório ao Github :octocat:
 
 Para conectar o repositório que você criou em seu computador com a sua conta do Github utilizaremos o protocolo SSH, muito comum para acesso remoto.
 Para isso, siga os seguintes passos:
