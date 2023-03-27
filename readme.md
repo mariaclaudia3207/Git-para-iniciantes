@@ -8,8 +8,6 @@ O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial des
 
 
 
-
-
 ## Sumário
 
 :small_blue_diamond: [Primeiros passos](#primeiros-passos-fishing_pole_and_fish)
