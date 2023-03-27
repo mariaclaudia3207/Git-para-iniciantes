@@ -1,11 +1,8 @@
-<h1 align="center">Git para Iniciantes</h1>
-
+<h1 align="center">Git para Iniciantes</h1
 
 <p align="justify">  
 O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial desde iniciantes a seniores na programação. Aqui você encontrará os primeiros passos e comandos para quem está começando agora, de forma clara e sem termos chatos que ninguém entende :)
 </p>
-
-
 
 
 ## Sumário
