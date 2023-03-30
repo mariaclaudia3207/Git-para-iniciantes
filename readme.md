@@ -5,6 +5,10 @@ O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial des
 </p>
 
 
+
+
+
+
 ## Sumário
 
 :small_blue_diamond: [Primeiros passos](#primeiros-passos-fishing_pole_and_fish)
@@ -26,6 +30,11 @@ O Git e o Github são amplamente utilizados, sendo uma ferramenta primordial des
 :small_blue_diamond: [Subir arquivos e modificações para o Github (push)](#subir-arquivos-e-modificações-para-o-github-push-arrow_up)
 
 :small_blue_diamond: [Adicionando tags de versionamento ao push](#adicionando-tags-de-versionamento-ao-push)
+
+
+
+
+
 
 
 ## Primeiros passos :fishing_pole_and_fish: 
@@ -203,7 +212,6 @@ $ ssh-keygen -t rsa -b 4096 -C "email_utilizado_no_github.com"
 
 
 
-
 ## Como clonar repositórios remotos do Github (git clone)
 
 Para baixar um repositório em que você está trabalhando ou encontrou no github para o seu computador, existe o comando "git clone":
@@ -217,7 +225,6 @@ A chave do repositório pode ser encontrada na aba:
 ![image](https://user-images.githubusercontent.com/126173770/225379646-73a491fb-15d9-4a51-a10b-5ef1faa0d629.png)
 
 </div>
-
 
 
 
@@ -288,6 +295,7 @@ $ git rebase  nome_do_branch
 ```
 $ git push origin master_ou_main(nome do principal)
 ```
+
 
 
 
