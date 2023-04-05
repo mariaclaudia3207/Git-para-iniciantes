@@ -216,7 +216,7 @@ $ ssh-keygen -t rsa -b 4096 -C "email_utilizado_no_github.com"
 
 Para baixar um repositório em que você está trabalhando ou encontrou no github para o seu computador, existe o comando "git clone":
 ```
-g clone chave_do_repositorio nome_que_vai_ficar_salvo
+git clone chave_do_repositorio nome_que_vai_ficar_salvo
 ```
 A chave do repositório pode ser encontrada na aba:
 
